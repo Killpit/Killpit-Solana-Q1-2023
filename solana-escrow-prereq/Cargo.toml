@@ -1,0 +1,17 @@
+[package]
+name = "solana-escrow-prereq"
+version = "0.1.0"
+edition = "2021"
+license = "WTFPL"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+solana-program = "1.14.13"
+thiserror = "1.0.38"
+spl-token = {version = "3.5.0", features = ["no-entrypoint"]}
+arrayref = "0.3.6"
+
+[lib]
+crate-type = ["cdylib", "lib"]
